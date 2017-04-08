@@ -32,6 +32,7 @@ class BookModule(tornado.web.UIModule):
     def html_body(self):
         return "<script>document.write(\"Hello!\")</script>"
 
+
     def css_files(self):
         return "/uimodule_static/css/newreleases.css"
 
