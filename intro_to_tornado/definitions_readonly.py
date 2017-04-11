@@ -1,11 +1,9 @@
 # coding=utf-8
+import pymongo
+import tornado.httpserver
+import tornado.ioloop
 import tornado.options
 import tornado.web
-import tornado.ioloop
-import tornado.httpserver
-
-import pymongo
-
 from tornado.options import options, define
 
 define("port", default=8000, help="run on the given port", type=int)
